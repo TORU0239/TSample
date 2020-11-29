@@ -57,12 +57,16 @@ class ViewController: UIViewController {
     }
     
     @objc func btnClicked() {
-        let newText = "Toru"
-        if(text.text == "Hello World") {
-            text.text = newText
-        } else {
-            text.text = "Hello World"
-        }
+//        let newText = "Toru"
+//        if(text.text == "Hello World") {
+//            text.text = newText
+//        } else {
+//            text.text = "Hello World"
+//        }
+        goToNextViewController()
+    }
+    
+    private func goToNextViewController() {
         
     }
 }
