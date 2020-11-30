@@ -15,8 +15,31 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        initContainer()
         initCenterLabel()
         initBottomButton()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        initTopBar()
+        super.viewWillAppear(animated)
+    }
+    
+    
+    func initTopBar() {
+        self.navigationController?.setNavigationBarHidden(true, animated:false)
+    }
+    
+    func initContainer() {
+        let containerView = UIView()
+        containerView.frame = UIScreen.main.bounds
+        containerView.backgroundColor = .red
+        self.view.addSubview(containerView)
+        
+//        containerView.translatesAutoresizingMaskIntoConstraints = false
+//        containerView.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = true
+//        containerView.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
+        
     }
     
     func initCenterLabel() {
@@ -67,7 +90,12 @@ class ViewController: UIViewController {
     }
     
     private func goToNextViewController() {
+        // present a modal with an embed UINavigationController
+        let rvc = SecondViewController()
+//        let vc = UINavigationController(rootViewController: rvc)
+//        vc.modalPresentationStyle = .fullScreen
+//        present(vc, animated: true, completion: nil)
         
+        self.navigationController?.pushViewController(rvc, animated: true)
     }
 }
-
