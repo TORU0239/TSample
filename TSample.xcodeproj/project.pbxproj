@@ -15,6 +15,7 @@
 		54CCEC2E2571541D004849BC /* TSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CCEC2D2571541D004849BC /* TSampleTests.swift */; };
 		54CCEC392571541D004849BC /* TSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CCEC382571541D004849BC /* TSampleUITests.swift */; };
 		54CCEC4A25738DB8004849BC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CCEC4925738DB8004849BC /* SecondViewController.swift */; };
+		54D8C301257926900081FD04 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D8C300257926900081FD04 /* CollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		54CCEC382571541D004849BC /* TSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSampleUITests.swift; sourceTree = "<group>"; };
 		54CCEC3A2571541D004849BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54CCEC4925738DB8004849BC /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		54D8C300257926900081FD04 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				54CCEC212571541D004849BC /* LaunchScreen.storyboard */,
 				54CCEC242571541D004849BC /* Info.plist */,
 				54CCEC4925738DB8004849BC /* SecondViewController.swift */,
+				54D8C300257926900081FD04 /* CollectionViewController.swift */,
 			);
 			path = TSample;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				54CCEC1B2571541B004849BC /* ViewController.swift in Sources */,
 				54CCEC172571541B004849BC /* AppDelegate.swift in Sources */,
 				54CCEC192571541B004849BC /* SceneDelegate.swift in Sources */,
+				54D8C301257926900081FD04 /* CollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

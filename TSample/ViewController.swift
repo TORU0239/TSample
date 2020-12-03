@@ -66,9 +66,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func initBottomButton() {
         button.setTitle("CLICK ME!", for: .normal)
-        button.setTitleColor(.magenta, for: .normal)
-        button.backgroundColor = .cyan
-        button.addTarget(self, action: #selector(btnClicked), for: .touchUpInside)
+        button.setTitleColor(.white, for: .normal)
+        button.backgroundColor = .black
+        button.addTarget(self, action: #selector(btnClickedToCollectionView), for: .touchUpInside)
         self.view.addSubview(button)
         
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -83,6 +83,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @objc func btnClicked() {
         goToNextViewController()
+    }
+    
+    
+    @objc func btnClickedToCollectionView() {
+        let nextVc = CollectionViewController()
+        self.navigationController?.pushViewController(nextVc, animated: true)
     }
     
     private func goToNextViewController() {
